@@ -25,20 +25,16 @@ def SunPosition(lat,lon,d,m,y,req,tz):
     print(Day,"\t\t",Wsch,"\t\t",Tran,"\t\t",Zach,"\nAs of %d-%d-%d (%s - UTC+%d)"%(y,m,d,tz,tshift))
     return (Wsch,Tran,Zach)
 
-# Req = -0.833 - dla wschodów i zachodów Słońca
-# Req = -6 - dla zmierzchu cywilnego
-# Req = -12 - dla zmierzchu żeglarskiego
-# Req = -18 - dla zmierzchu astronomicznego
+# Req = -0.833 - For sunrise and sunset
+# Req = -6 - civil twilight
+# Req = -12 - nautical twilight
+# Req = -18 - astronomical twilight 
 
 
 now = datetime.datetime.now()
 day = now.day
 month = now.month
 year = now.year
-
-# day = 22
-# month = 9
-# year = 2021
 lat = 49.9527772
 lon = 19.9718352
 req = -0.833
