@@ -21,7 +21,7 @@ def SunPosition(lat,lon,d,m,y,req,tz):
     Tran = '{0:02.0f}:{1:02.0f}'.format(*divmod(Tran * 60, 60))
     Zach = '{0:02.0f}:{1:02.0f}'.format(*divmod(Zach * 60, 60))
     Day =  '{0:02.0f}:{1:02.0f}'.format(*divmod(Day * 60, 60))
-    print("Day length\tSunrise\t\tTransition\tSunset")
+    print("Day length\tSunrise\t\tTransit\tSunset")
     print(Day,"\t\t",Wsch,"\t\t",Tran,"\t\t",Zach,"\nAs of %d-%d-%d (%s - UTC+%d)"%(y,m,d,tz,tshift))
     return (Wsch,Tran,Zach)
 
